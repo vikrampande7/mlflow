@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/220813443084874830/59ae9c26882f43b2b5b51c4d4c38d907/artifacts
+end_time: 1702786661928
+entry_point_name: ''
+experiment_id: '220813443084874830'
+lifecycle_stage: active
+run_id: 59ae9c26882f43b2b5b51c4d4c38d907
+run_name: useful-hare-904
+run_uuid: 59ae9c26882f43b2b5b51c4d4c38d907
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702786656023
+status: 3
+tags: []
+user_id: Vikram

@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 # Get Arguments from Command Line
 parser = argparse.ArgumentParser()  # ArgumentParser object
 parser.add_argument("--alpha", type=float, required=False, default=0.7)
-parser.add_argument("--l1_ratio", type=float, required=False, default=0.4)
+parser.add_argument("--l1_ratio", type=float, required=False, default=0.7)
 args = parser.parse_args()
 print(f"Arguments: {args}")
 
