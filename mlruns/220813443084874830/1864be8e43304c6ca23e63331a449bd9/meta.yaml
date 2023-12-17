@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/220813443084874830/1864be8e43304c6ca23e63331a449bd9/artifacts
+end_time: 1702785493874
+entry_point_name: ''
+experiment_id: '220813443084874830'
+lifecycle_stage: active
+run_id: 1864be8e43304c6ca23e63331a449bd9
+run_name: sassy-mink-327
+run_uuid: 1864be8e43304c6ca23e63331a449bd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702785484441
+status: 3
+tags: []
+user_id: Vikram
