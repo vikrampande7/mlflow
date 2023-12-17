@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/655940069824197879/15100e95ffdb49738ac27ce57e32e8ec/artifacts
+end_time: 1702835380077
+entry_point_name: ''
+experiment_id: '655940069824197879'
+lifecycle_stage: active
+run_id: 15100e95ffdb49738ac27ce57e32e8ec
+run_name: valuable-crow-122
+run_uuid: 15100e95ffdb49738ac27ce57e32e8ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702835370750
+status: 3
+tags: []
+user_id: Vikram

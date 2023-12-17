@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/655940069824197879/43a650d28d3744139b833c75c06a898b/artifacts
+end_time: 1702835582565
+entry_point_name: ''
+experiment_id: '655940069824197879'
+lifecycle_stage: active
+run_id: 43a650d28d3744139b833c75c06a898b
+run_name: lyrical-koi-727
+run_uuid: 43a650d28d3744139b833c75c06a898b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702835578261
+status: 3
+tags: []
+user_id: Vikram

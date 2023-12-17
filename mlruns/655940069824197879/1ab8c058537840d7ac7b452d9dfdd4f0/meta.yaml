@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/655940069824197879/1ab8c058537840d7ac7b452d9dfdd4f0/artifacts
+end_time: 1702835344079
+entry_point_name: ''
+experiment_id: '655940069824197879'
+lifecycle_stage: active
+run_id: 1ab8c058537840d7ac7b452d9dfdd4f0
+run_name: unruly-donkey-826
+run_uuid: 1ab8c058537840d7ac7b452d9dfdd4f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702835343930
+status: 4
+tags: []
+user_id: Vikram
