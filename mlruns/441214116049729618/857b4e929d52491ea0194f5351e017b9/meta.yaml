@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/441214116049729618/857b4e929d52491ea0194f5351e017b9/artifacts
+end_time: 1703010688969
+entry_point_name: ''
+experiment_id: '441214116049729618'
+lifecycle_stage: active
+run_id: 857b4e929d52491ea0194f5351e017b9
+run_name: peaceful-cow-941
+run_uuid: 857b4e929d52491ea0194f5351e017b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703010681102
+status: 3
+tags: []
+user_id: Vikram
