@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/515169700878368775/ad4d3bb3bb8147d882c898593979c205/artifacts
+end_time: 1703008841016
+entry_point_name: ''
+experiment_id: '515169700878368775'
+lifecycle_stage: active
+run_id: ad4d3bb3bb8147d882c898593979c205
+run_name: thundering-koi-334
+run_uuid: ad4d3bb3bb8147d882c898593979c205
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703008828351
+status: 3
+tags: []
+user_id: Vikram
