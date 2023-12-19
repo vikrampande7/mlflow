@@ -65,6 +65,12 @@ if __name__ == "__main__":
     exp = mlflow.set_experiment(experiment_name="Experiment_4")
 
     with mlflow.start_run(experiment_id=exp.experiment_id):
+        tags = {
+            "release_version": "1.0",
+            "model_type": "classification",
+            "metrics_used": "default"
+        }
+        mlflow.set_tags(tags=tags)
         model = DecisionTreeClassifier(criterion=criterion,
                                        max_depth=max_depth,
                                        min_samples_split=min_samples_split,
