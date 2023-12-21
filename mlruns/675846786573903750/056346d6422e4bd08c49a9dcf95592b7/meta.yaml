@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/675846786573903750/056346d6422e4bd08c49a9dcf95592b7/artifacts
+end_time: 1703135938558
+entry_point_name: ''
+experiment_id: '675846786573903750'
+lifecycle_stage: active
+run_id: 056346d6422e4bd08c49a9dcf95592b7
+run_name: masked-stork-45
+run_uuid: 056346d6422e4bd08c49a9dcf95592b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703135925008
+status: 3
+tags: []
+user_id: Vikram
