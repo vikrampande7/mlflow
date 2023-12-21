@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/175695308842200040/5f6a1d567c0c41fda72af388b664fe84/artifacts
+end_time: 1703136535268
+entry_point_name: ''
+experiment_id: '175695308842200040'
+lifecycle_stage: active
+run_id: 5f6a1d567c0c41fda72af388b664fe84
+run_name: likeable-worm-629
+run_uuid: 5f6a1d567c0c41fda72af388b664fe84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703136528977
+status: 3
+tags: []
+user_id: Vikram

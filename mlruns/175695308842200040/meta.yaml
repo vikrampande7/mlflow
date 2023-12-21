@@ -1,0 +1,6 @@
+artifact_location: file:///D:/Work/ML/mlflow/mlruns/175695308842200040
+creation_time: 1703136528658
+experiment_id: '175695308842200040'
+last_update_time: 1703136528658
+lifecycle_stage: active
+name: experiment_auto_sklearn

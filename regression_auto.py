@@ -55,7 +55,7 @@ if __name__ == "__main__":
     alpha = args.alpha
     l1_ratio = args.l1_ratio
 
-    exp = mlflow.set_experiment(experiment_name="experiment_auto")
+    exp = mlflow.set_experiment(experiment_name="experiment_auto_sklearn")
 
     print(f"Name: {exp.name}")
     print("Experiment ID: {}".format(exp.experiment_id))
@@ -65,10 +65,16 @@ if __name__ == "__main__":
     print(f"Creation Timestamp: {exp.creation_time}")
 
     with mlflow.start_run(experiment_id=exp.experiment_id):
-        # AutoLog with MLFlow
-        mlflow.autolog(
+        # # AutoLog with MLFlow
+        # mlflow.autolog(
+        #     log_input_examples=True
+        # )
+
+        # Library Specified AutoLog - sklearn
+        mlflow.sklearn.autolog(
             log_input_examples=True
         )
+
         # Create Model
         model = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
         model.fit(train_X, train_Y)
