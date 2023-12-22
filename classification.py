@@ -62,7 +62,9 @@ if __name__ == "__main__":
     min_samples_split = args.min_samples_split
     min_samples_leaf = args.min_samples_leaf
 
-    exp = mlflow.set_experiment(experiment_name="Experiment_4")
+    mlflow.set_tracking_uri(uri="http://127.0.0.1:5000")
+
+    exp = mlflow.set_experiment(experiment_name="Experiment_tracking")
 
     with mlflow.start_run(experiment_id=exp.experiment_id):
         tags = {
