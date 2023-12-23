@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/977872427277154036/28f9fea8f1fc457f86ce5b2288dd911a/artifacts
+end_time: 1703307065035
+entry_point_name: ''
+experiment_id: '977872427277154036'
+lifecycle_stage: active
+run_id: 28f9fea8f1fc457f86ce5b2288dd911a
+run_name: orderly-penguin-678
+run_uuid: 28f9fea8f1fc457f86ce5b2288dd911a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703307050152
+status: 3
+tags: []
+user_id: Vikram
