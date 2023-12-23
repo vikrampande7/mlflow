@@ -140,4 +140,5 @@ if __name__ == "__main__":
         }
 
         mlflow.log_artifact("red-wine-quality.csv")
-        mlflow.sklearn.log_model(model, 'signatureModel', signature=signature, input_example=input_example)
+        # mlflow.sklearn.log_model(model, 'signatureModel', signature=signature, input_example=input_example)
+        mlflow.sklearn.save_model(model, 'signatureModel', signature=signature, input_example=input_example)
