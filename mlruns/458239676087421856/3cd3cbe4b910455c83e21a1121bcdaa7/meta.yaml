@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/458239676087421856/3cd3cbe4b910455c83e21a1121bcdaa7/artifacts
+end_time: 1703307890031
+entry_point_name: ''
+experiment_id: '458239676087421856'
+lifecycle_stage: active
+run_id: 3cd3cbe4b910455c83e21a1121bcdaa7
+run_name: silent-snail-324
+run_uuid: 3cd3cbe4b910455c83e21a1121bcdaa7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703307876452
+status: 3
+tags: []
+user_id: Vikram
