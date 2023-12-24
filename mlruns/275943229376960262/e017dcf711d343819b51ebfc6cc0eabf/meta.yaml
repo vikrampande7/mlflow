@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/e017dcf711d343819b51ebfc6cc0eabf/artifacts
+end_time: 1703392874809
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: e017dcf711d343819b51ebfc6cc0eabf
+run_name: kindly-mouse-820
+run_uuid: e017dcf711d343819b51ebfc6cc0eabf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703392870124
+status: 4
+tags: []
+user_id: Vikram

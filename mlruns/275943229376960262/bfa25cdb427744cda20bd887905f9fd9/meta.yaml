@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/bfa25cdb427744cda20bd887905f9fd9/artifacts
+end_time: 1703394467746
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: bfa25cdb427744cda20bd887905f9fd9
+run_name: big-mole-507
+run_uuid: bfa25cdb427744cda20bd887905f9fd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703394453699
+status: 3
+tags: []
+user_id: Vikram

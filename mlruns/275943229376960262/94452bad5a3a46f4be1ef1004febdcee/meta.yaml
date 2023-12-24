@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/94452bad5a3a46f4be1ef1004febdcee/artifacts
+end_time: 1703393099287
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: 94452bad5a3a46f4be1ef1004febdcee
+run_name: burly-foal-118
+run_uuid: 94452bad5a3a46f4be1ef1004febdcee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703393094357
+status: 4
+tags: []
+user_id: Vikram

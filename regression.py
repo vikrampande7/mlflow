@@ -15,8 +15,8 @@ logger = logging.getLogger(__name__)
 
 # Get Arguments from Command Line
 parser = argparse.ArgumentParser()  # ArgumentParser object
-parser.add_argument("--alpha", type=float, required=False, default=0.7)
-parser.add_argument("--l1_ratio", type=float, required=False, default=0.7)
+parser.add_argument("--alpha", type=float, required=False, default=0.4)
+parser.add_argument("--l1_ratio", type=float, required=False, default=0.4)
 args = parser.parse_args()
 print(f"Arguments: {args}")
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     alpha = args.alpha
     l1_ratio = args.l1_ratio
 
-    exp = mlflow.set_experiment(experiment_name="experiment_1")
+    exp = mlflow.set_experiment(experiment_name="experiment_modelEval")
 
     with mlflow.start_run(experiment_id=exp.experiment_id):
         # Create Model
@@ -74,4 +74,13 @@ if __name__ == "__main__":
         mlflow.log_metric("rmse", rmse)
         mlflow.log_metric("mae", mae)
         mlflow.log_metric("r2", r2)
-        mlflow.sklearn.log_model(model, "regModel")
+        model_info = mlflow.sklearn.log_model(model, "regModel")
+
+        # Model Evaluation -- evaluators=SHAP
+        mlflow.evaluate(
+            model_info.model_uri,
+            test_data,
+            targets="quality",
+            model_type="regressor",
+            evaluators=["default"]
+        )

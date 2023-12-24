@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/0e44a9ddf633455c91cb78b4a9e1af9f/artifacts
+end_time: 1703394338337
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: 0e44a9ddf633455c91cb78b4a9e1af9f
+run_name: useful-newt-902
+run_uuid: 0e44a9ddf633455c91cb78b4a9e1af9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703394314108
+status: 3
+tags: []
+user_id: Vikram

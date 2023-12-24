@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/c9909652683346fdae43beb78a1d769b/artifacts
+end_time: 1703392782711
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: c9909652683346fdae43beb78a1d769b
+run_name: sassy-ant-467
+run_uuid: c9909652683346fdae43beb78a1d769b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703392774769
+status: 4
+tags: []
+user_id: Vikram
