@@ -1,4 +1,5 @@
 # Import Libraries
+import os.path
 import warnings
 import argparse
 import logging
@@ -9,6 +10,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 import mlflow
 import mlflow.sklearn
+from mlflow.models import make_metric
+import matplotlib.pyplot as plt
 
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
@@ -76,6 +79,36 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         model_info = mlflow.sklearn.log_model(model, "regModel")
 
+        # # Add a custom metrics for evaluation
+        # def squared_diff_plus_half(eval_df, _builtin_metrics):
+        #     return np.sum(np.abs(eval_df["prediction"] - eval_df["target"] + 0.5) ** 2)
+        #
+        # def targetsum_divided_by_two(_eval_df, builtin_metrics):
+        #     return builtin_metrics["sum_on_target"] / 2
+        #
+        # squared_diff_plus_half_metric = make_metric(
+        #     eval_fn=squared_diff_plus_half,
+        #     greater_is_better=False,
+        #     name="squared_diff_plus_half"
+        # )
+        #
+        # targetsum_divided_by_two_metric = make_metric(
+        #     eval_fn=targetsum_divided_by_two,
+        #     greater_is_better=True,
+        #     name=targetsum_divided_by_two
+        # )
+        
+        # Add custom Artifact 
+        # def prediction_target_scatter(eval_df, _builtin_metrics, artifacts_dir):
+        #     plt.scatter(eval_df["prediction"], eval_df["target"])
+        #     plt.xlabel("Target")
+        #     plt.ylabel("Predictions")
+        #     plt.title("Scatter Plot of Targets vs Predicted")
+        #     plot_path = os.path.join(artifacts_dir, "scatter_plot.png")
+        #     plt.savefig(plot_path)
+        #     return {"Example_scatter_plot_artifact": plot_path}
+
+
         # Model Evaluation -- evaluators=SHAP
         mlflow.evaluate(
             model_info.model_uri,
@@ -83,4 +116,6 @@ if __name__ == "__main__":
             targets="quality",
             model_type="regressor",
             evaluators=["default"]
+            # custom_metrics=[targetsum_divided_by_two_metric, squared_diff_plus_half_metric]
+            #custom_artifacts=[prediction_target_scatter()]
         )

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/0f2fffdba6df438ba13cf0654ba373ed/artifacts
+end_time: 1703396389975
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: 0f2fffdba6df438ba13cf0654ba373ed
+run_name: invincible-eel-25
+run_uuid: 0f2fffdba6df438ba13cf0654ba373ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703396382760
+status: 4
+tags: []
+user_id: Vikram

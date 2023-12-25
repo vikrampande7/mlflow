@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/245157364720342150/34a84f18f309465ebe8b2887613de056/artifacts
+end_time: 1703474017645
+entry_point_name: ''
+experiment_id: '245157364720342150'
+lifecycle_stage: active
+run_id: 34a84f18f309465ebe8b2887613de056
+run_name: big-dolphin-233
+run_uuid: 34a84f18f309465ebe8b2887613de056
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703474011277
+status: 3
+tags: []
+user_id: Vikram

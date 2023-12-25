@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/4a92ba8384c54a5bad2c4c608765e503/artifacts
+end_time: 1703396581198
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: 4a92ba8384c54a5bad2c4c608765e503
+run_name: unequaled-snipe-893
+run_uuid: 4a92ba8384c54a5bad2c4c608765e503
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703396565104
+status: 3
+tags: []
+user_id: Vikram

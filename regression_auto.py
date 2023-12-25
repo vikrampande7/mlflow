@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 
 # Get Arguments from Command Line
 parser = argparse.ArgumentParser()  # ArgumentParser object
-parser.add_argument("--alpha", type=float, required=False, default=0.7)
-parser.add_argument("--l1_ratio", type=float, required=False, default=0.7)
+parser.add_argument("--alpha", type=float, required=False, default=0.3)
+parser.add_argument("--l1_ratio", type=float, required=False, default=0.4)
 args = parser.parse_args()
 print(f"Arguments: {args}")
 
@@ -56,7 +56,9 @@ if __name__ == "__main__":
     alpha = args.alpha
     l1_ratio = args.l1_ratio
 
-    exp = mlflow.set_experiment(experiment_name="experiment_signature_inferSignature")
+    exp = mlflow.set_experiment(experiment_name="experiment_signature_RegisterModel_UI")
+
+    # mlflow.set_tracking_uri(uri="http://127.0.0.1:5000")
 
     print(f"Name: {exp.name}")
     print("Experiment ID: {}".format(exp.experiment_id))

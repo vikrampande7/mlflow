@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/275943229376960262/3279894aec9349c89be8d80ef4bb86c1/artifacts
+end_time: 1703396500804
+entry_point_name: ''
+experiment_id: '275943229376960262'
+lifecycle_stage: active
+run_id: 3279894aec9349c89be8d80ef4bb86c1
+run_name: bemused-loon-973
+run_uuid: 3279894aec9349c89be8d80ef4bb86c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703396494414
+status: 4
+tags: []
+user_id: Vikram

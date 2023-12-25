@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1703473535911
+current_stage: None
+description: ElasticNet Regressor Model registered through UI
+last_updated_timestamp: 1703473574624
+name: ElasticNet_v1
+run_id: 22408a36dca344aa8095bd286a0548f3
+run_link: ''
+source: file:///D:/Work/ML/mlflow/mlruns/245157364720342150/22408a36dca344aa8095bd286a0548f3/artifacts/signatureModel
+status: READY
+status_message: null
+storage_location: file:///D:/Work/ML/mlflow/mlruns/245157364720342150/22408a36dca344aa8095bd286a0548f3/artifacts/signatureModel
+user_id: null
+version: 1

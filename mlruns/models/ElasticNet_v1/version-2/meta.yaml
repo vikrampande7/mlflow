@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1703474040164
+current_stage: None
+description: ''
+last_updated_timestamp: 1703474040164
+name: ElasticNet_v1
+run_id: 34a84f18f309465ebe8b2887613de056
+run_link: ''
+source: file:///D:/Work/ML/mlflow/mlruns/245157364720342150/34a84f18f309465ebe8b2887613de056/artifacts/signatureModel
+status: READY
+status_message: null
+storage_location: file:///D:/Work/ML/mlflow/mlruns/245157364720342150/34a84f18f309465ebe8b2887613de056/artifacts/signatureModel
+user_id: null
+version: 2
