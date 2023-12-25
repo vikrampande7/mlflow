@@ -141,6 +141,21 @@ if __name__ == "__main__":
             'data': np.array(test_X.values)
         }
 
+        run = mlflow.active_run()
+
         mlflow.log_artifact("red-wine-quality.csv")
-        mlflow.sklearn.log_model(model, 'ElasticNet-api-Model', signature=signature, input_example=input_example, registered_model_name = 'ElasticNet-api')
+        mlflow.sklearn.log_model(model, 'ElasticNet-api-Model', signature=signature, input_example=input_example)
+        # Register model through register_model function
+        mlflow.register_model(
+            model_uri="runs:/{}/ElasticNet-api-Model".format(run.info.run_id),
+            name="ElasticNet-api-2"
+        )
+
+        # Load the registered model and predict on dataset (in this case test_X)
+        loaded_model = mlflow.sklearn.load_model(model_uri="models:/ElasticNet-api-2/1")
+        predicted_using_loaded_model = loaded_model.predict(test_X)
+        (rmse, mae, r2) = get_metrics(test_Y, predicted_using_loaded_model)
+        print(f"Model Results with Alpha {alpha} & l1_ratio {l1_ratio} with the Loaded Model")
+        print(f" RMSE: {rmse}\n MAE: {mae},\n R2_Score: {r2}")
+
         # mlflow.sklearn.save_model(model, 'signatureModel', signature=signature, input_example=input_example)

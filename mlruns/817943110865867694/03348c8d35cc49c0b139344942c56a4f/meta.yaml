@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/817943110865867694/03348c8d35cc49c0b139344942c56a4f/artifacts
+end_time: 1703477453069
+entry_point_name: ''
+experiment_id: '817943110865867694'
+lifecycle_stage: active
+run_id: 03348c8d35cc49c0b139344942c56a4f
+run_name: unleashed-gnu-602
+run_uuid: 03348c8d35cc49c0b139344942c56a4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703477448089
+status: 3
+tags: []
+user_id: Vikram

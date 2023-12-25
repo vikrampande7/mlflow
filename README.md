@@ -20,4 +20,6 @@ MLFlow Registry
 - Register models through UI / API/ MLflow Client.
 - We can register model using UI only after model logging and experimentation is done 
 - We can register model using functions such as log_model() and register_model() 
-- log_model() : passing registered_model_name parameter 
+- log_model() : passing registered_model_name parameter (model gets registered while logging)
+- register_model(): model gets registered after logging process 
+- We can load the registered model and make predictions. 

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/817943110865867694/bca93403145c4f80bdaf782f8d79424a/artifacts
+end_time: 1703477281708
+entry_point_name: ''
+experiment_id: '817943110865867694'
+lifecycle_stage: active
+run_id: bca93403145c4f80bdaf782f8d79424a
+run_name: caring-goat-569
+run_uuid: bca93403145c4f80bdaf782f8d79424a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703477276600
+status: 3
+tags: []
+user_id: Vikram
