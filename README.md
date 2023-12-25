@@ -15,3 +15,9 @@ MLFlow Evaluation
 - It creates Explainer Graphs, scatter plots, box plots etc.
 - With the help of evaluate, we can compare different runs and expriments.
 - It can also work with custom artifacts and metrics.
+
+MLFlow Registry
+- Register models through UI / API/ MLflow Client.
+- We can register model using UI only after model logging and experimentation is done 
+- We can register model using functions such as log_model() and register_model() 
+- log_model() : passing registered_model_name parameter 

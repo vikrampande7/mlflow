@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1703476587548
+current_stage: None
+description: null
+last_updated_timestamp: 1703476587548
+name: ElasticNet-api
+run_id: ab195f1fc6af4c97bd3b3c680a48db5a
+run_link: null
+source: file:///D:/Work/ML/mlflow/mlruns/817943110865867694/ab195f1fc6af4c97bd3b3c680a48db5a/artifacts/ElasticNet-api-Model
+status: READY
+status_message: null
+storage_location: file:///D:/Work/ML/mlflow/mlruns/817943110865867694/ab195f1fc6af4c97bd3b3c680a48db5a/artifacts/ElasticNet-api-Model
+user_id: null
+version: 2

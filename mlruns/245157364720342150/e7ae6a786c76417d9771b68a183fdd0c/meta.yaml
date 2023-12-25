@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/245157364720342150/e7ae6a786c76417d9771b68a183fdd0c/artifacts
+end_time: 1703476548090
+entry_point_name: ''
+experiment_id: '245157364720342150'
+lifecycle_stage: active
+run_id: e7ae6a786c76417d9771b68a183fdd0c
+run_name: magnificent-wren-313
+run_uuid: e7ae6a786c76417d9771b68a183fdd0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703476541753
+status: 3
+tags: []
+user_id: Vikram

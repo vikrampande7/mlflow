@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 
 # Get Arguments from Command Line
 parser = argparse.ArgumentParser()  # ArgumentParser object
-parser.add_argument("--alpha", type=float, required=False, default=0.3)
-parser.add_argument("--l1_ratio", type=float, required=False, default=0.4)
+parser.add_argument("--alpha", type=float, required=False, default=0.45)
+parser.add_argument("--l1_ratio", type=float, required=False, default=0.45)
 args = parser.parse_args()
 print(f"Arguments: {args}")
 
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     alpha = args.alpha
     l1_ratio = args.l1_ratio
 
-    exp = mlflow.set_experiment(experiment_name="experiment_signature_RegisterModel_UI")
+    exp = mlflow.set_experiment(experiment_name="experiment_signature_RegisterModel_API")
 
     # mlflow.set_tracking_uri(uri="http://127.0.0.1:5000")
 
@@ -142,5 +142,5 @@ if __name__ == "__main__":
         }
 
         mlflow.log_artifact("red-wine-quality.csv")
-        mlflow.sklearn.log_model(model, 'signatureModel', signature=signature, input_example=input_example)
+        mlflow.sklearn.log_model(model, 'ElasticNet-api-Model', signature=signature, input_example=input_example, registered_model_name = 'ElasticNet-api')
         # mlflow.sklearn.save_model(model, 'signatureModel', signature=signature, input_example=input_example)
