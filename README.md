@@ -36,3 +36,8 @@ MLFlow Project
   - ![mlflow_mlproject_cli_command_terminal.png](outputs%2Fmlflow_mlproject_cli_command_terminal.png)
   - ![mlflow_mlproject_cli_ui_output.png](outputs%2Fmlflow_mlproject_cli_ui_output.png)
   - API/Script: Create a new script or use existing if any. Use mlflow.projects.run() function - we can define all the parameters in it same as CLI command.
+
+MLFlow Client
+- Can be used as lower level API that directly translates MLflow REST API Calls
+- We can create client and with client we can create an experiment, get an experiment, rename, delete, restore experiments.
+- search_experiments is useful with Mlflow client
