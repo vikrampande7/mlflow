@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/984609804224029448/949772640b914187b2d419b7255e37f8/artifacts
+end_time: 1703560251836
+entry_point_name: ''
+experiment_id: '984609804224029448'
+lifecycle_stage: active
+run_id: 949772640b914187b2d419b7255e37f8
+run_name: glamorous-bird-91
+run_uuid: 949772640b914187b2d419b7255e37f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703559576729
+status: 4
+tags: []
+user_id: Vikram

@@ -1,6 +1,6 @@
 import pickle
 import mlflow
-import mlflow,sklearn
+import mlflow.sklearn
 
 # filename = "elastic_net.pkl"
 filename = "path_to_external_model"

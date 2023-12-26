@@ -1,0 +1,15 @@
+name: "ElasticNet Regression"
+
+conda_env: conda.yaml
+
+entry_points:
+  ElasticNet:
+    command: "python regression_simplified.py --alpha={alpha} --l1_ratio={l1_ratio}"
+    parameters:
+      alpha:
+        type: float
+        default: 0.4
+
+      l1_ratio:
+        type: float
+        default: 0.4

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/984609804224029448/360c21b1dd3c434f8db4743a0cf004bf/artifacts
+end_time: 1703561851095
+entry_point_name: ''
+experiment_id: '984609804224029448'
+lifecycle_stage: active
+run_id: 360c21b1dd3c434f8db4743a0cf004bf
+run_name: bouncy-lynx-418
+run_uuid: 360c21b1dd3c434f8db4743a0cf004bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703561833095
+status: 3
+tags: []
+user_id: Vikram

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/984609804224029448/70c1bdf72f3041d596264116d2fb8e1e/artifacts
+end_time: 1703560826481
+entry_point_name: ''
+experiment_id: '984609804224029448'
+lifecycle_stage: active
+run_id: 70c1bdf72f3041d596264116d2fb8e1e
+run_name: debonair-sponge-572
+run_uuid: 70c1bdf72f3041d596264116d2fb8e1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703560805882
+status: 3
+tags: []
+user_id: Vikram
