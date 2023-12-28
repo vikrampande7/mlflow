@@ -1,5 +1,6 @@
 import mlflow
 from mlflow import MlflowClient
+from mlflow.entities import ViewType
 
 client = MlflowClient()
 
@@ -25,3 +26,32 @@ print(f"Artifact Location: {experiment.artifact_location}")
 print(f"Tags: {experiment.tags}")
 print(f"Lifecycle Stage: {experiment.lifecycle_stage}")
 print(f"Creation Time: {experiment.creation_time}")
+
+
+# Search Experiments function
+experiments = client.search_experiments(
+    view_type=ViewType.ALL,
+    order_by=["experiment_id ASC"]
+)
+for exp in experiments:
+    print(f"Experiment Name: {exp.name} AND Experiment ID: {exp.experiment_id}")
+
+
+'''Create a Run'''
+run_1 = client.create_run(
+    experiment_id=experiment_id,
+    tags={"runVersion": "1.0", "runNumber": "1"},
+    run_name="run_1 from client"
+)
+run_2 = client.create_run(
+    experiment_id=experiment_id,
+    tags={"runVersion": "2.0", "runNumber": "2"},
+    run_name="run_2 from client"
+)
+print(f"Run Name: {run_1.info.run_name}")
+print(f"Run Tags: {run_1.data.tags}")
+print(f"Run ID: {run_1.info.run_id}")
+print(f"Run Status: {run_1.info.status}")
+
+'''Get Run'''
+# run_1 = client.get_run(run_1.info.run_id)

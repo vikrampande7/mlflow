@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Work/ML/mlflow/mlruns/900681660077618817/1d8a9dffcb68411bbf8a3d05506bcd82/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '900681660077618817'
+lifecycle_stage: active
+run_id: 1d8a9dffcb68411bbf8a3d05506bcd82
+run_name: run_2 from client
+run_uuid: 1d8a9dffcb68411bbf8a3d05506bcd82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703587455533
+status: 1
+tags: []
+user_id: unknown

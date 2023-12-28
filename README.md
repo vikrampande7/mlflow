@@ -40,4 +40,6 @@ MLFlow Project
 MLFlow Client
 - Can be used as lower level API that directly translates MLflow REST API Calls
 - We can create client and with client we can create an experiment, get an experiment, rename, delete, restore experiments.
-- search_experiments is useful with Mlflow client
+- search_experiments is useful with Mlflow client.
+- We can log the information - params, metrics with client. We can also rename, get and set various runs with client.
+- We can get the metrics, history of previous run with get run method.
