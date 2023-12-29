@@ -1,0 +1,14 @@
+=== MLFLOW COMMAND LINE INTERFACE COMMANDS ===
+
+1. set MLFLOW_TRACKING_URI=
+2. mlflow doctor
+3. mlflow doctor --mask-envs
+4. mlflow artifacts list --run-id id_number
+5. mlflow artifacts download --run-id id_number --dst-path path_name
+6. mlflow artifacts log-artifacts --local-dir local_path --run-id id_number --artifact-path art_path
+7. mlflow db upgrade sqlite:///mlflow.db
+8. mlflow experiments create --experiment-name cli_experiment
+9. mlflow experiments csv --experiment-id id_number --filename exp_file.csv
+10. mlflow runs list --experiment-id id_number --view "all"
+11. mlflow runs describe --run-id run_id
+

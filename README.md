@@ -43,3 +43,12 @@ MLFlow Client
 - search_experiments is useful with Mlflow client.
 - We can log the information - params, metrics with client. We can also rename, get and set various runs with client.
 - We can get the metrics, history of previous run with get run method.
+- We can also delete the run by providing run id, restore run and search runs same as experiments.
+- We can implement model versioning and management with MLFlow client. 
+
+MLFlow CLI Commands:
+- mlflow doctor: examines the system and shows metadata
+- mlflow doctor mask-envs: to hide sensitive information
+- mlflow artifact commands - download, list, log-artifact, log-artifacts
+- Database management command - mlflow db - upgrade the database schema to the latest supported version.
+- Experiments: Create, rename, delete experiments, etc.
