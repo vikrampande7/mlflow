@@ -52,3 +52,6 @@ MLFlow CLI Commands:
 - mlflow artifact commands - download, list, log-artifact, log-artifacts
 - Database management command - mlflow db - upgrade the database schema to the latest supported version.
 - Experiments: Create, rename, delete experiments, etc.
+
+MLflow with AWS
+- Sample ML model training, tracking and inference with AWS using AWS CodeCommit, SageMaker, EC2, S3.
