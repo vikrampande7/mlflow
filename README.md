@@ -1,5 +1,19 @@
 ## MLFlow
 
+
+##### Following are the modules for the project:
+- ```classification.py```: contains the ML classification code.
+- ```cli_commands```: Contains mlflow CLI commands.
+- ```client_tracking.py```: Contains the script of tracking with Mlflow Client.
+- ```mlflow_client.py```: Experimentation with mlflow client.
+- ```MLproject```: MLproject configuration file.
+- ```mlserver_commands.txt```
+- ```registerExtModel.py```: Experiment to log the external model 
+- ```regression.py```: Contains the ML Regression code.
+- ```regression_auto.py```: Contains the ML regression code with autologging function.
+- ```regression_simplified.py```: Simplified version of ```regression.py```
+- ```run.py```: script to run the code with entry_point
+
 Mlflow server tracking
 - Command to run in Terminal - mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow-artifacts --host 127.0.0.1 --port 5000
 - Only artifacts are stored locally, metrics, parameters are logged in database and shown in MLflow UI
