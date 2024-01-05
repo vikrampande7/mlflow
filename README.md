@@ -1,10 +1,29 @@
 ## MLFlow
 
+![mlflow-logo](/outputs/mlflow_logo.png)
+
+##### Steps to Run
+1. Clone the git repository
+- ```git  clone https://github.com/vikrampande7/mlflow.git```
+2. Install all the required dependencies (refer conda.yaml) 
+3. Activate the environment and run the code: run following command in terminal
+- ```python run.py```
+4. Check the experiment and run status in mlflow UI. Run the follwing command in terminal.
+- ```mlflow ui```
+
 
 ##### Following are the modules for the project:
+- ```data```: data for classification and regression with train-test split.
+- ```mlflow-artifacts```: experiment of classification and saved artifact externally.
+- ```mlruns```: contains the experiments and runs.
+- ```outputs```: contains the images of experiments and UI.
+- ```red-wine-data```: logged data for regression.
+- ```signatureModel```: experimentation with Model Signature.
 - ```classification.py```: contains the ML classification code.
 - ```cli_commands```: Contains mlflow CLI commands.
 - ```client_tracking.py```: Contains the script of tracking with Mlflow Client.
+- ```conda.yaml```: Conda environment configuration file.
+- ```mlflow.db```: sqlite db
 - ```mlflow_client.py```: Experimentation with mlflow client.
 - ```MLproject```: MLproject configuration file.
 - ```mlserver_commands.txt```
@@ -14,23 +33,23 @@
 - ```regression_simplified.py```: Simplified version of ```regression.py```
 - ```run.py```: script to run the code with entry_point
 
-Mlflow server tracking
+**Mlflow server tracking**
 - Command to run in Terminal - mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow-artifacts --host 127.0.0.1 --port 5000
 - Only artifacts are stored locally, metrics, parameters are logged in database and shown in MLflow UI
 - Command to be added in script - mlflow.set_tracking_uri(uri="http://127.0.0.1:5000") 
 
-MLFlow Signature
+**MLFlow Signature**
 - Signatures can be added manually by defining input schema, output schema and input examples or other things if required.
 - Signatures can also be added with infer_signature function by providing data examples (test data) and predicted values. Input examples are data columns and data values (test data preferred) in this case. 
 - When save_model is used instead of log_model, artifacts are stored locally and not in mlflow server.
 
-MLFlow Evaluation
+**MLFlow Evaluation**
 - mlflow.evaluate() function is used, it takes several parameters as arguments.
 - It creates Explainer Graphs, scatter plots, box plots etc.
 - With the help of evaluate, we can compare different runs and expriments.
 - It can also work with custom artifacts and metrics.
 
-MLFlow Registry
+**MLFlow Registry**
 - Register models through UI / API/ MLflow Client.
 - We can register model using UI only after model logging and experimentation is done 
 - We can register model using functions such as log_model() and register_model() 
@@ -38,7 +57,7 @@ MLFlow Registry
 - register_model(): model gets registered after logging process 
 - We can load the registered model and make predictions. 
 
-MLFlow Project
+**MLFlow Project**
 - Can be used to run the Machine Learning code in different systems without worrying about creating environments and dependencies.
 - MLproject file contains: name, environment and entrypoints
 - The environments are system environment, virtual environment, conda environment and docker environment.
@@ -51,7 +70,7 @@ MLFlow Project
   - ![mlflow_mlproject_cli_ui_output.png](outputs%2Fmlflow_mlproject_cli_ui_output.png)
   - API/Script: Create a new script or use existing if any. Use mlflow.projects.run() function - we can define all the parameters in it same as CLI command.
 
-MLFlow Client
+**MLFlow Client**
 - Can be used as lower level API that directly translates MLflow REST API Calls
 - We can create client and with client we can create an experiment, get an experiment, rename, delete, restore experiments.
 - search_experiments is useful with Mlflow client.
@@ -60,12 +79,12 @@ MLFlow Client
 - We can also delete the run by providing run id, restore run and search runs same as experiments.
 - We can implement model versioning and management with MLFlow client. 
 
-MLFlow CLI Commands:
+**MLFlow CLI Commands**:
 - mlflow doctor: examines the system and shows metadata
 - mlflow doctor mask-envs: to hide sensitive information
 - mlflow artifact commands - download, list, log-artifact, log-artifacts
 - Database management command - mlflow db - upgrade the database schema to the latest supported version.
 - Experiments: Create, rename, delete experiments, etc.
 
-MLflow with AWS
+**MLflow with AWS**
 - Sample ML model training, tracking and inference with AWS using AWS CodeCommit, SageMaker, EC2, S3.
