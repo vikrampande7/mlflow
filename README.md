@@ -1,6 +1,6 @@
 ## MLFlow
 
-![mlflow-logo](/outputs/mlflow_logo.png){: .align-center}
+![mlflow-logo](/outputs/mlflow_logo.png)
 
 ##### Steps to Run
 1. Clone the git repository
