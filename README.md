@@ -1,15 +1,18 @@
 ## MLFlow
 
-![mlflow-logo](/outputs/mlflow_logo.png)
+![mlflow-logo](/outputs/mlflow_logo.png){: .align-center}
 
 ##### Steps to Run
 1. Clone the git repository
-- ```git  clone https://github.com/vikrampande7/mlflow.git```
 2. Install all the required dependencies (refer conda.yaml) 
 3. Activate the environment and run the code: run following command in terminal
-- ```python run.py```
 4. Check the experiment and run status in mlflow UI. Run the follwing command in terminal.
-- ```mlflow ui```
+```
+git clone https://github.com/vikrampande7/mlflow.git
+cd mlflow
+python run.py
+mlflow ui
+```
 
 
 ##### Following are the modules for the project:
@@ -86,5 +89,41 @@
 - Database management command - mlflow db - upgrade the database schema to the latest supported version.
 - Experiments: Create, rename, delete experiments, etc.
 
+
 **MLflow with AWS**
-- Sample ML model training, tracking and inference with AWS using AWS CodeCommit, SageMaker, EC2, S3.
+
+Sample ML model training, tracking and inference with AWS using AWS CodeCommit, SageMaker, EC2, S3.
+1. Create AWS account, new user with and with limited but required access and permissions.
+2. Create a new AWS CodeCommit Repo.
+3. Create S3 bucket instance to store artifacts.
+4. Create mlflow tracking server on AWS EC2.
+- Create EC2 instance. Select Ubuntu as OS (or any OS of your choice)
+- Run a set of commands to run mlflow on EC2.
+- Set the tracking URI on AWS.
+5. Clone the CodeCommit repo
+- Generate the credentials for CodeCommit (HTTPS)
+- Clone the CodeCommit repo to local.
+6. Create your required Machine Learning codes say for data preprocessing, training, evaluation, etc.
+- Log input, parameters, metrics, models, etc.
+- Create MLproject file and set all the variables.
+- Create a conda.yaml file.
+- Create run.py file to run MLproject file
+- Run the code locally to check if everything runs perfectly.
+7. Push everything to CodeCommit repo.
+8. AWS SageMaker Setup
+- Add our Git repo to SageMaker (SageMaker-Notebook-Git Repo)
+- Create a notebook instance and set instance type.
+- Assign role, permissions. The role should be SageMaker execution role.
+- Allow full access of S3 as we store artifacts in S3.
+9. Run the codes on Notebook instance in AWS SageMaker.
+10. Check the results, compare models and evaluate using MLflow UI set with AWS.
+- Register the best model.
+11. Deploy the model with build command in terminal.
+- ```mlflow sagemaker build-and-push-container```
+- Push the imag to ECR, check the docker image in ECR.
+12. Deploy and create an endpoint.
+- Either using CLI or creating a new script (API)
+- Provide endpoint name, URI and necessary configurations.
+- run the script.
+- Check the output on SageMaker (SageMaker - Inference - endpoints)
+13. Use the deployed model for inference. 
